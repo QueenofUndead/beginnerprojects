@@ -4,23 +4,23 @@ function addnumber() {
     number+= 1;
     console.log(number)
     $("p").html(function () {
-        return number
-    })
+        return number;
+    });
 }
 // removes 1 from current count
 function removenumber() {
     number -= 1;
     console.log(number)
     $("p").html(function () {
-        return number
-    })
+        return number;
+    });
 }
 // made buttons functional
 $(document).ready(function () {
     $("#countup").click(function () { 
-        addnumber()
+        addnumber();
     });
     $("#countdown").click(function() {
-        removenumber()
-    })
+        removenumber();
+    });
 });
